@@ -25,7 +25,7 @@ public class BallMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0))
         {
             started = true;
             rb.velocity = staringVelocity;
